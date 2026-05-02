@@ -8,6 +8,7 @@ paper implementation of Meta Ai
 ## Experiment Run
 
 `pip install -r requirements.txt`
+
 `litellm --model gemini/gemini-3.1-pro --port 4000`
 
 And make one more terminal. And run below code in new terminal.
