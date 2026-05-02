@@ -1,6 +1,6 @@
 # Scaling-Test-Time-Compute-for-Agentic-Coding-
 
-paper implementation of Meta Ai
+unofficial paper implementation of Meta(facebook) Ai
 
 ```python
 This paper was released on April 16, 2026.
