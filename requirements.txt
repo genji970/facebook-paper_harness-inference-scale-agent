@@ -14,5 +14,7 @@ python-dotenv>=1.0.1
 tqdm>=4.66.0
 
 google-genai
-'litellm[proxy]'
+
+litellm[proxy]
+
 mini-swe-agent
