@@ -1,10 +1,52 @@
 # Scaling-Test-Time-Compute-for-Agentic-Coding-
 paper implementation of Meta Ai
 
-# gitl clone 
+`git clone https://github.com/genji970/Scaling-Test-Time-Compute-for-Agentic-Coding-`
+`cd your/path/https://github.com/genji970/Scaling-Test-Time-Compute-for-Agentic-Coding-`
 
-# cd your/path/
+## Experiment Run
 
+`pip install -r requirements.txt`
+`litellm --model gemini/gemini-3.1-pro --port 4000`
+
+And make one more terminal. And run below code in new terminal.
+
+```python
+source .env
+
+MSWEA_MODEL_NAME="gemini/gemini-3-pro-preview" \
+GEMINI_API_KEY="$GEMINI_API_KEY" \
+python experiment/run.py \
+  --provider "gemini" \
+  --model_name "gemini-3-pro-preview" \
+  --gemini_api_key "$GEMINI_API_KEY" \
+  --dataset_name "princeton-nlp/SWE-bench_Verified" \
+  --train_split "test" \
+  --max_dataset_samples 1 \
+  --start_sample_index 0 \
+  --end_sample_index 1 \
+  --num_rollouts 2 \
+  --num_iterations 2 \
+  --top_k 1 \
+  --group_size 2 \
+  --vote_count 1 \
+  --max_steps_per_rollout 10 \
+  --agent_max_steps 1 \
+  --pdr_max_summary_chars 4000 \
+  --pdr_max_context_chars 16000 \
+  --mini_swe_agent_extra_args="--yolo" \
+  --swebench_prepare_workspace \
+  --swebench_enabled \
+  --swebench_dry_run \
+  --swebench_max_workers 1 \
+  --swebench_cache_level env \
+  --continue_on_error \
+  --experiment_output_path "outputs/pdr_rtv_results.jsonl" \
+  --experiment_summary_path "outputs/pdr_rtv_summary.json"
+```
+
+## Installation & Run for Real benchmark test
+```python
 # docker install & start
 apt-get update
 apt-get install -y docker.io
@@ -26,3 +68,4 @@ python -m swebench.harness.run_evaluation \
   --max_workers 1 \
   --run_id gemini_3_pro_pdr_rtv_eval \
   --cache_level env
+```
