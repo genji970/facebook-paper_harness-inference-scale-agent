@@ -28,10 +28,10 @@ And make one more terminal. And run below code in new terminal.
 source .env
 
 MSWEA_MODEL_NAME="gemini/gemini-3-pro-preview" \
-GEMINI_API_KEY="AIzaSyxxxxxxxxxxxxxxxxxxxxxxxx" \
+GEMINI_API_KEY="xxxxxxxxxxxxxxxxxxxxxxxx" \
 python experiment/run.py \
   --provider "gemini" \
-  --gemini_api_key "AIzaSyxxxxxxxxxxxxxxxxxxxxxxxx" \
+  --gemini_api_key "xxxxxxxxxxxxxxxxxxxxxxxx" \
   --dataset_name "princeton-nlp/SWE-bench_Verified" \
   --train_split "test" \
   --max_dataset_samples 1 \
