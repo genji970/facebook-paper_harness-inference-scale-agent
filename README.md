@@ -3,7 +3,7 @@ paper implementation of Meta Ai
 
 `git clone https://github.com/genji970/Scaling-Test-Time-Compute-for-Agentic-Coding-` 
 
-`cd your/path/https://github.com/genji970/Scaling-Test-Time-Compute-for-Agentic-Coding-`
+`cd your/path/Scaling-Test-Time-Compute-for-Agentic-Coding-`
 
 ## Experiment Run
 
