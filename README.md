@@ -14,7 +14,7 @@ This paper argues that the main bottleneck in test-time scaling for agentic codi
 
 `cd your/path/Scaling-Test-Time-Compute-for-Agentic-Coding-`
 
-`change gemini_api_key value in below code, GEMINI_API_KEY=`
+`change gemini_api_key value in below code, GEMINI_API_KEY= & gemini_api_key= `
 
 ## Experiment Run
 
