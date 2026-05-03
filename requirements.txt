@@ -18,3 +18,4 @@ google-genai
 litellm[proxy]
 
 mini-swe-agent
+gradio
