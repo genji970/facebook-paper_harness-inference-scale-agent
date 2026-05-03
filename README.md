@@ -93,7 +93,7 @@ But I only coded for gemini-3.1-pro and for SWEbenchmark only.
 `https://arxiv.org/abs/2604.16529v1`
 
 
-## Citatiton
+## Citation
 @misc{kim2026scalingtesttimecomputeagentic,
       title={Scaling Test-Time Compute for Agentic Coding}, 
       author={Joongwon Kim and Wannan Yang and Kelvin Niu and Hongming Zhang and Yun Zhu and Eryk Helenowski and Ruan Silva and Zhengxing Chen and Srinivasan Iyer and Manzil Zaheer and Daniel Fried and Hannaneh Hajishirzi and Sanjeev Arora and Gabriel Synnaeve and Ruslan Salakhutdinov and Anirudh Goyal},
